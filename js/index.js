@@ -13,7 +13,7 @@ outputJumps.innerHTML = kJumps; //Muestra el valor por defecto del Slider
 outputSpeed.innerHTML = sliderSpeed.value; //Muestra el valor por defecto del Slider
 var K, N, count = 1; //Limite de cuantos escalones puede saltar la rana (1...k),Numero de escalones, contador
 var DP = [], arr = [], aux = [], calls = []; //Arreglo con las soluciones, Arreglos con los nombre de los elementos, Arreglo de llamadas
-
+var tmp;
 var lineTime = 2000;
 var firstStone = "M 0 175 q 75 -150 150 0";
 var allPath = "M 0 175 q 75 -150 150 0";
@@ -174,6 +174,7 @@ function changeAll()
     	delayChangeElement(i, 1);
     	delayJumpingFrog(calls[i], i);
     }
+	totalTries.innerHTML = "Total: " + tmp;
 }
 
 function changeStepByStep()
@@ -209,5 +210,6 @@ function callingJumpingStones(n, k)
 		DP.push(-1);
 	K = k;
 	N = n;
-	totalTries.innerHTML = "Total: " + jumpingStones(0);
+	
+	tmp = jumpingStones(0);
 }
