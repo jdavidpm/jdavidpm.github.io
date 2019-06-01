@@ -174,7 +174,6 @@ function changeAll()
     	delayChangeElement(i, 1);
     	delayJumpingFrog(calls[i], i);
     }
-	totalTries.innerHTML = "Total: " + tmp;
 }
 
 function changeStepByStep()
@@ -211,5 +210,5 @@ function callingJumpingStones(n, k)
 	K = k;
 	N = n;
 	
-	tmp = jumpingStones(0);
+	totalTries.innerHTML = "Total: " + jumpingStones(0);
 }
