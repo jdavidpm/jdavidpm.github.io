@@ -51,7 +51,7 @@
 }
 
 body {
-	background-image: url("images/B2.jpg");
+	background-image: url("images/BG.jpg");
  	height: 100%; 	
 	background-size: cover;
 }
@@ -127,8 +127,8 @@ h3 {
 	border-radius: 3px;
 	text-transform: uppercase;
 	background-color: #222629;
-	color: #86C232;
-	box-shadow: 20px 20px 20px rgba(1, 1, 1, .2);
+	color: #367588;
+	box-shadow: 20px 20px 20px rgba(1, 1, 1, .8);
 	transition: all 0.5s;
 	opacity: 0.8;
 }
@@ -148,32 +148,32 @@ h3 {
 .text {
 	display: flex;
 	justify-content: center;
-	margin-top: 40vh;
+	margin-top: 20vh;
 	-webkit-transform: translateY(-50%);
 			transform: translateY(-50%);
 	text-align: center;
 	transition: -webkit-transform .3s ease-in-out;
 	transition: transform .3s ease-in-out;
 	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-	opacity: 0.8;
+	opacity: 0.7;
 }
 .text:hover {
 	-webkit-transform: rotateX(35deg), translateY(-50%);
 			transform: rotateX(35deg), translateY(-50%);
 }
-.text:hover span {color: #86C232;} /*Color de texto cuando cambia*/
+.text:hover span {color: #367588;} /*Color de texto cuando cambia*/
 
 .text:hover span:nth-child(even) {
-	-webkit-transform: skewY(15deg);
-			transform: skewY(15deg);
-	background-color: #FFFFFF; /*Color de fondo cuando cambia*/
-	color: #86C232; /*Color de texto cuando cambia*/
+	-webkit-transform: scale3d(-1,1,1);
+			transform: scale3d(-1,1,1);
+	background-color: #367588; /*Color de fondo cuando cambia*/
+	color: #222629; /*Color de texto cuando cambia*/
 }
 .text:hover span:nth-child(odd) {
-	-webkit-transform: skewY(-15deg);
-			transform: skewY(-15deg);
-	background-color: #FFFFFF; /*Color de fondo cuando cambia*/
-	color: #86C232; /*Color de texto cuando cambia*/
+	-webkit-transform: scale3d(-1,1,1);/*skewY(-15deg);*/
+			transform: scale3d(-1,1,1);/*skewY(-15deg);*/
+	background-color: #367588; /*Color de fondo cuando cambia*/
+	color: #222629; /*Color de texto cuando cambia*/
 }
 .text > span {
 	display: block;
@@ -182,7 +182,7 @@ h3 {
 	height: 130px;
 	border-top: 50px;
 	line-height: 120px;
-	color: #86C232; /*Color de texto inicialmente*/
+	color: #367588; /*Color de texto inicialmente*/
 	font-size: 80px;
 	font-family: Georgia;
 	transition: color .3s ease-in-out, background-color .3s ease-in-out, -webkit-transform .3s ease-in-out;
@@ -200,7 +200,7 @@ h3 {
 	font-size: 22px;
   line-height: 1.2;
   text-decoration: none;
-  background-image: linear-gradient(to right, #86C232 0, #86C232 100%);
+  background-image: linear-gradient(to right, #367588 0, #367588 100%);
   background-position: 0 1.2em;
   background-size: 0 100%;
   background-repeat: no-repeat;
