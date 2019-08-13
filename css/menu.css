@@ -34,6 +34,7 @@
 }
 #menu > ul {
   background: #222629;
+  opacity: 0.7;
 }
 #menu > ul > li {
   float: left;
@@ -72,11 +73,11 @@
   transform-style: preserve-3d;
 }
 #menu > ul > li.active > a {
-  color: #86C232;
+  color: #367588;
 }
 #menu > ul > li:hover > a,
 #menu > ul > li > a:hover {
-  color: #86C232;
+  color: #367588;
   -webkit-transform: rotateX(90deg) translateY(-23px);
   -moz-transform: rotateX(90deg) translateY(-23px);
   transform: rotateX(90deg) translateY(-23px);
@@ -94,7 +95,7 @@
   height: 100%;
   padding: 16px 20px;
   color: #dff2fa;
-  background: #86C232;
+  background: #367588;
   content: attr(data-title);
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
